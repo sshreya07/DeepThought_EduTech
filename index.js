@@ -1,6 +1,7 @@
 const searchBtn = document.getElementById('search').addEventListener('click', searchCountry);
 const countryData = document.getElementById('countries');
 
+//details of searched country
 function searchCountry(e) {
 
     const name = document.getElementById('searchInput').value;
@@ -68,7 +69,7 @@ function searchCountry(e) {
 e.preventDefault();
 };
 
-
+//details of all countries
 
     fetch(`https://restcountries.com/v3.1/all`)
     .then((Response) => {
